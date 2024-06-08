@@ -1,9 +1,6 @@
-'use client'
+"use client"
 import { useState, useEffect } from "react";
-import { booksData } from './booksData'; // Ensure this file exists with your books data
-// import SearchBar from "../components/SearchBar";
-// import SearchResults from "../components/SearchResults";
-// import ReadingList from "../components/ReadingList";
+import { booksData } from "./booksData";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import ReadingList from "./components/ReadingList";
@@ -20,6 +17,11 @@ export default function Home() {
       setSearchResults([]);
     }
   }, [searchQuery]);
+
+  useEffect(() => {
+    // Display first 12 books by default
+    setReadingList(booksData.slice(0, 12));
+  }, []);
 
   const filterBooks = (query) => {
     return booksData.filter((book) =>
