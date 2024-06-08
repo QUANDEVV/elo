@@ -2,7 +2,7 @@ import React from "react";
 
 const ReadingList = ({ list, removeFromReadingList }) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 max-h-96 overflow-y-auto">
       {list.map((book, index) => (
         <div
           key={index}
@@ -19,7 +19,7 @@ const ReadingList = ({ list, removeFromReadingList }) => {
           </div>
           <button
             onClick={() => removeFromReadingList(book)}
-            className="bg-red-500 text-white p-2 rounded"
+            className="bg-orangeRed text-white p-2 rounded"
           >
             Remove
           </button>

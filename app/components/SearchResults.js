@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchResults = ({ results, addToReadingList }) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 max-h-96 overflow-y-auto">
       {results.map((book, index) => (
         <div
           key={index}
@@ -19,7 +19,7 @@ const SearchResults = ({ results, addToReadingList }) => {
           </div>
           <button
             onClick={() => addToReadingList(book)}
-            className="bg-blue-500 text-white p-2 rounded"
+            className="bg-turquoise text-white p-2 rounded"
           >
             Add
           </button>
