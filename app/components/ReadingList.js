@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const ReadingList = ({ list, removeFromReadingList }) => {
   return (
@@ -14,15 +13,15 @@ const ReadingList = ({ list, removeFromReadingList }) => {
             <img
               src={book.coverPhotoURL}
               alt={`${book.title} cover`}
-              className="w-32 h-32 rounded-md mb-4"
+              className="w-full rounded-md mb-4"
             />
-            <div className="flex-grow text-center">
-              {/* <p className="font-bold">{book.title}</p> */}
+            <div className="text-center">
+              <p className="font-bold text-lg">{book.title}</p>
               <p className="text-gray-600">by {book.author}</p>
             </div>
             <button
               onClick={() => removeFromReadingList(book)}
-              className="bg-orangeRed text-white p-2 rounded mt-4"
+              className="bg-red-500 text-white py-2 px-4 rounded mt-4"
             >
               Remove
             </button>

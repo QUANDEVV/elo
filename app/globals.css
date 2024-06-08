@@ -7,6 +7,13 @@
 @import '@fontsource/mulish/400.css';
 @import '@fontsource/mulish/700.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
 body {
+  @apply bg-gray-100 text-gray-900;
   font-family: 'Mulish', sans-serif;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
 }
