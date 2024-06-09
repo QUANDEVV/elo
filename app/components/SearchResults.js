@@ -6,7 +6,7 @@ const SearchResults = ({ results, addToReadingList }) => {
     }
 
   return (
-    <div className="absolute z-10 w-full max-w-2xl mx-auto mt-2 overflow-y-auto transform -translate-x-1/2 bg-white border border-gray-300 rounded-lg shadow-lg left-1/2 max-h-96">
+    <div className="absolute z-10 w-full max-w-2xl mx-auto mt-2 overflow-y-auto transform -translate-x-1/2 bg-white border border-gray-300 rounded-lg shadow-lg left-1/2 max-h-96 sm:w-[360px]">
       {
         results.map((book, index) => (
           <div
