@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const SearchResults = ({ results, addToReadingList }) => {
   return (
-    <div className="max-h-96 overflow-y-auto w-full max-w-2xl mx-auto bg-white shadow-lg rounded-lg z-50">
+    <div className="z-50 w-full max-w-2xl mx-auto overflow-y-auto bg-white rounded-lg shadow-lg max-h-96">
       {results.map((book, index) => (
         <div
           key={index}
-          className="p-4 border-b border-gray-200 flex items-center hover:bg-gray-100"
+          className="flex items-center p-4 border-b border-gray-200 hover:bg-gray-100"
         >
           <img
             src={book.coverPhotoURL}
@@ -22,7 +22,7 @@ const SearchResults = ({ results, addToReadingList }) => {
           </div>
           <button
             onClick={() => addToReadingList(book)}
-            className="bg-turquoise text-white p-2 rounded"
+            className="p-2 text-white rounded bg-turquoise"
           >
             Add
           </button>
