@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <SearchResults
         results={searchResults}

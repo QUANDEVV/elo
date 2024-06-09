@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
   return (
-    <div className="flex justify-center my-8 sm:mx-6">
+    <div className="relative flex justify-center my-8 sm:mx-6">
       <input
         type="text"
         value={searchQuery}
