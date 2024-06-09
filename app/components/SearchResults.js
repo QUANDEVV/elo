@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchResults = ({ results, addToReadingList }) => {
   return (
-    <div className="absolute z-10 w-full max-w-2xl mx-auto overflow-y-auto transform -translate-x-1/2 bg-white rounded-lg shadow-lg left-1/2 max-h-96">
+    <div className="absolute z-10 w-full max-w-2xl mx-auto overflow-y-auto transform -translate-x-1/2 bg-white border rounded-lg shadow-lg left-1/2 max-h-96">
       {results.map((book, index) => (
         <div
           key={index}
