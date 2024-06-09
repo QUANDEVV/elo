@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import { booksData } from "./booksData";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import ReadingList from "./components/ReadingList";
+import { toast } from "react-toastify";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,11 +33,13 @@ export default function Home() {
   const addToReadingList = (book) => {
     if (!readingList.includes(book)) {
       setReadingList([...readingList, book]);
+      toast.success(`Added "${book.title}" to your list!`);
     }
   };
 
   const removeFromReadingList = (book) => {
     setReadingList(readingList.filter((item) => item !== book));
+    toast.info(`Removed "${book.title}" from your list.`);
   };
 
   return (

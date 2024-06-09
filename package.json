@@ -12,7 +12,8 @@
     "@fontsource/mulish": "^5.0.18",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "postcss": "^8",
