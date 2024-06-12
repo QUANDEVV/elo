@@ -3,7 +3,7 @@ import React from "react";
 const ReadingList = ({ list, removeFromReadingList }) => {
   return (
     <div className="z-0 px-6">
-      <h2 className="mb-6 ml-[220px] text-[1.625rem] font-bold text-[#335C6E] sm:ml-0">
+      <h2 className="mb-6 ml-[220px]  text-[1.625rem] font-bold text-[#335C6E] sm:ml-0">
         Teacher's List
       </h2>
       <div className="grid grid-cols-2  sm:grid-cols-2 xl:grid-cols-6 gap-4 max-w-[1360px] mx-auto">
